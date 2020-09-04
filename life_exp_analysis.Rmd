@@ -21,3 +21,30 @@ Here I will do my analysis.
 Here is more text
 
 more text
+
+```{r}
+install.packages("gapminder")
+library("tidyverse")
+library("gapminder")
+data("gapminder_unfiltered")
+view(gapminder_unfiltered)
+head(gapminder_unfiltered)
+
+```
+
+```{r}
+
+gapminder_unfiltered %>%
+  group_by(year) %>%
+  filter(lifeExp == max(lifeExp)) %>%
+  arrange(year) ->
+  maxdf
+  
+```
+
+```{r}
+#Here are the first few rows:
+  
+  head(maxdf)
+```
+
