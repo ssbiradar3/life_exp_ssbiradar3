@@ -1,6 +1,6 @@
 ---
 title: "Examine Life Expectancy"
-author: "David Gerard"
+author: "Sujata Biradar"
 date: "`r Sys.Date()`"
 output: pdf_document
 urlcolor: "blue"
@@ -46,5 +46,7 @@ gapminder_unfiltered %>%
 #Here are the first few rows:
   
   head(maxdf)
+
+
 ```
 
